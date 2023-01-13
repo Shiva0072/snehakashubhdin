@@ -31,8 +31,9 @@ export default function Gallery() {
         </div>
       </div>
       <div className="gallery">
-        {data.map((item, index) => {
-          const img = require(`../Assets/images/${item.substr(2)}`);
+        {data.map((img, index) => {
+          //   const img = require(`../Assets/images/${item.substr(2)}`);
+          console.log("herer using : ", img);
           return (
             <div key={index} className="pics" onClick={() => displayImg(img)}>
               <img src={img} alt="wallpaper" style={{ width: "100%" }} />{" "}

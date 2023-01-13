@@ -11,8 +11,14 @@ const getFiles = () => {
 
   const imgs = [];
   importAll(images, imgs);
-  //   console.log("before returning;  : ", imgs);
-  return imgs;
+
+  const new_imgs = [];
+  imgs.forEach((img) => {
+    new_imgs.push(require(`../Assets/images/${img.substr(2)}`));
+  });
+
+  console.log("justed obtained imga;  : ", new_imgs);
+  return new_imgs;
 };
 
 export default getFiles;
