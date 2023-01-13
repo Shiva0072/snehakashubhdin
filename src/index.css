@@ -1,13 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Josefin+Sans:wght@300&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color: #f6dcdc;
+  --text: #0a1c2b;
+  --button: #051c2c;
+  --button_nw: #a25a44;
+  /*   --font-size: 10 vw; */
+  /* --font-size: 1.3rem; */
+  --font-size: calc(0.4em + 1vmin);
+  --max-width: 1200px;
+  --font-family-heading: "Dancing Script", cursive;
+  --font-family-text: "Josefin Sans", sans-serif;
+  --font-style: italic;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  /* font-size: var(--font-size); */
+  font-size: calc(0.5vmin + var(--font-size));
+  font-family: var(--font-family-text);
+  color: var(--text);
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
+/* separator*/
+.separator {
+  background: rgb(246, 220, 220);
+  background: linear-gradient(
+    114deg,
+    rgba(246, 220, 220, 0.785049053801208) 6%,
+    rgba(10, 28, 43, 1) 76%
+  );
+  height: 10px;
+}
+
+.separator-2 {
+  background: rgb(246, 220, 220);
+  background: linear-gradient(
+    -114deg,
+    rgba(246, 220, 220, 0.785049053801208) 6%,
+    rgba(10, 28, 43, 1) 76%
+  );
+  height: 10px;
+}
+
+.separator-3 {
+  height: 10px;
+  background: rgb(246, 220, 220);
+  background: linear-gradient(
+    114deg,
+    rgba(246, 220, 220, 0.82) 1%,
+    rgba(162, 90, 68, 1) 80%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6dcdc",endColorstr="#a25a44",GradientType=1);
+}
+
+.btn-primary {
+  box-shadow: none;
+  background-color: var(--text);
+  margin-bottom: 1rem;
+}
+.btn-primary:hover {
+  box-shadow: none;
+  background-color: var(--text);
+}
+.btn-primary:focus {
+  box-shadow: none;
+  background-color: var(--text);
+}
+.btn-primary:active {
+  box-shadow: none;
 }

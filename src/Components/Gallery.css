@@ -1,0 +1,121 @@
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  /* border: solid seagreen; */
+}
+.gallery .pics {
+  -webkit-trasition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+  /* border: solid rebeccapurple; */
+}
+.gallery .pics:hover {
+  opacity: 0.8;
+}
+@media (max-width: 991px) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 480px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+.model {
+  width: 100%;
+  height: 100vh;
+  /* border: solid red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000000;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    transform 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.model img {
+  /* width: auto; */
+  max-width: 100%;
+  height: auto;
+  /* max-height: 60%; */
+  display: block;
+  /* line-height: 0; */
+  /* box-sizing: border-box; */
+  /* width: 80%;
+    height: 80%; */
+  object-fit: contain;
+  object-position: bottom;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+  /* border: solid green; */
+}
+@media (min-width: 400px) {
+  .model img {
+    max-height: 100%;
+    height: 650px;
+    width: auto;
+    max-width: auto;
+    object-fit: contain;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -60px;
+    /* border: solid red; */
+    /* margin-top: 20px; */
+  }
+}
+
+.svg:active {
+  scale: 0.8;
+}
+.svg:hover {
+  cursor: pointer;
+}
+/* 
+  .model .open .svg {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    background-color: black;
+    cursor: pointer;
+  } */
+
+/* .img-opened {
+    padding: 10px;
+    margin: 20px;
+    background-color: aqua;
+  } */
