@@ -5,9 +5,9 @@ export default function Hero() {
   return (
     <section class="yel">
       <div class="name">
-        <div>Shubham</div>
-        <div>&</div>
-        <div>Sneha</div>
+        <span>Shubham</span>
+        <span>&</span>
+        <span>Sneha</span>
       </div>
       <p>Invite you to celebrate their wedding</p>
       <a href="#footer">
