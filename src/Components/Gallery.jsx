@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 import "./Gallery.css";
-import getFiles from "../utils/getFiles.js";
 
 // const data = getFiles();
 const data = [

@@ -3,13 +3,16 @@ import "./Hero.css";
 
 export default function Hero() {
   return (
-    <section class="yel">
-      <div class="name">
+    <section className="yel">
+      <div className="name">
         <span>Shubham</span>
-        <span>&</span>
+        <span>Weds</span>
         <span>Sneha</span>
       </div>
-      <p>Invite you to celebrate their wedding</p>
+      <div className="invite-heading">
+        <p>Together with their parents</p>
+        <p>Invite you to celebrate their wedding</p>
+      </div>
       <a href="#footer">
         <button type="submit" class="btn btn-primary">
           RSVP
